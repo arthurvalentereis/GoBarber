@@ -22,6 +22,7 @@ class AppointmentRepository implements IAppointmentsRepository {
 
     public async findAllInDayFromProvider({
         provider_id,
+        day,
         month,
         year
     } : IFindAllInDayFromProviderDTO): Promise<Appointment[]> {
