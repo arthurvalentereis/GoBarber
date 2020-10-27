@@ -2,6 +2,9 @@ import React from 'react';
 
 import { createStackNavigator} from '@react-navigation/stack';
 import Dasbhoard from '../pages/Dasbhoard';
+import Profile from '../pages/Profile';
+import CreateAppointment from '../pages/CreateAppointment';
+import AppointmentCreated from '../pages/AppointmentCreated';
 
 
 const App = createStackNavigator();
@@ -14,7 +17,11 @@ const AppRoutes: React.FC = () => (
     }}
 
     >
-    <App.Screen name="Dasbhoard" component={Dasbhoard} />
+    <App.Screen name="Dashboard" component={Dasbhoard} />
+    <App.Screen name="CreateAppointment" component={CreateAppointment} />
+    <App.Screen name="AppointmentCreated" component={AppointmentCreated} />
+
+    <App.Screen name="Profile" component={Profile} />
   </App.Navigator>
 );
 
